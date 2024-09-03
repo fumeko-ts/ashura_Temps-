@@ -1,38 +1,70 @@
 body {
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    background: linear-gradient(135deg, #5e3ae2, #78c3ce);
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
     padding: 0;
 }
 
-nav {
+header {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.discord-button {
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.discord-button:hover {
+    background-color: #5b6eae;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
-nav h1 {
-    margin: 0;
-    font-size: 1.5em;
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 main {
@@ -48,6 +80,18 @@ main {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s;
+}
+
+.panel a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.panel:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .panel img {
