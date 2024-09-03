@@ -9,12 +9,14 @@ body {
 nav {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
@@ -28,19 +30,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-header {
-    text-align: center;
-    padding: 50px 0;
-}
-
-header h1 {
+nav h1 {
     margin: 0;
-    font-size: 3em;
-}
-
-header p a {
-    color: #88d3ce;
-    text-decoration: none;
+    font-size: 1.5em;
 }
 
 main {
