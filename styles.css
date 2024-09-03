@@ -1,106 +1,87 @@
 body {
-    background: linear-gradient(135deg, #5e3ae2, #78c3ce);
     font-family: Arial, sans-serif;
-    color: white;
+    background: linear-gradient(to bottom, lightcyan, lightpurple);
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.banner h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-.discord-button {
-    background-color: #7289da;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.discord-button:hover {
-    background-color: #5b6eae;
-}
-
 nav {
-    margin-top: 10px;
+    background-color: #333;
+    padding: 1em;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
+    padding: 0.5em 1em;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+nav ul li a.cta {
+    background-color: #6200ea;
     border-radius: 5px;
 }
 
+header {
+    text-align: center;
+    padding: 2em 0;
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
 main {
+    padding: 2em;
+}
+
+.card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 1em;
 }
 
-.panel {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+.card {
+    background-color: #2c2c2c;
+    padding: 1em;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s;
+    text-align: center;
 }
 
-.panel a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-.panel:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.panel img {
-    width: 50px;
-    height: 50px;
+.card img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-right: 20px;
 }
 
-.panel .info {
-    flex: 1;
+.card .buttons {
+    margin-top: 1em;
+}
+
+.card .buttons button {
+    background-color: #6200ea;
+    border: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .buttons button:hover {
+    background-color: #3700b3;
 }
